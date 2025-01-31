@@ -3,13 +3,20 @@
     box-sizing: border-box;
 }
 
+.m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 #mainGrid{
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 100vw;
     height: 100vh;
+    background-color: lightgray;
     
 }
 
@@ -17,5 +24,79 @@
 
     grid-area: 1 / 1 / 5 / 2;
     background-color: #1992D4;
+    font-weight: bold;
+    color: white;
 
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+
+}
+
+#sideBarBreakdown{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 3fr 7fr;
+    gap: 15%;
+    font-size: large;
+
+    & a:hover{
+        background-color: #1e87c0;
+        border-radius: 4px;
+        box-shadow: 0px 0px 3px 4px #1e87c0;
+    }
+
+    & a span{
+        padding-right: 10px;
+    }
+
+}
+
+#sideBarHeader{
+
+    font-size: larger;
+
+}
+
+#sideBarFirst{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+#sideBarSecond{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 10px;
+
+}
+
+#topBar{
+    background-color: white;
+    grid-area: 1 / 2 / 2 / 6;
+}
+
+#topBarTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+#topBarTopLeft{
+    border: 1px solid black;
+ width: 60%;
+}
+
+#topBarTopRight{
+    width: 40%;
+    border: 1px solid black;
+    align-items: flex-end;
+    & #avatar{
+        
+        border-radius: 50%;
+    }
 }

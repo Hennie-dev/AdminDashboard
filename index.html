@@ -5,11 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Admin Dashboard</title>
         <link href="./styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
     </head>
     <body>
-        <div id="mainGrid">  
+        <div id="mainGrid" class="m-plus-rounded-1c-regular">  
             <div id="sideBar">
+                <div id="sideBarBreakdown">
+                    <div id="sideBarHeader">
+                        <a href='#'><span class="glyphicon glyphicon-th-large"></span> DashBoard </a>
+                    </div>
+                    <div id="sideBarFirst">
+                        <a href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
+                        <a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a>
+                        <a href="#"><span class="glyphicon glyphicon-comment"></span> Messages</a>
+                        <a href="#"><span class="glyphicon glyphicon-time"></span> History</a>
+                        <a href="#"><span class="glyphicon glyphicon-check"></span> Tasks</a>
+                        <a href="#"><span class="glyphicon glyphicon-equalizer"></span> Communities</a>
+                    </div>
+                    <div id="sideBarSecond">
+                        <a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a>
+                        <a href="#"><span class="glyphicon glyphicon-question-sign"></span> Support</a>
+                        <a href="#"><span class="glyphicon glyphicon-eye-close"></span> Privacy</a>
+                    </div>
+                </div>
+            </div>
+            <div id="topBar">
+                <div id="topBarTop">
+                    <div id="topBarTopLeft">
+                        <span class="glyphicon glyphicon-search"></span>
+                        <input type="text">
+                    </div>
+                    <div id="topBarTopRight">
+                        <span>
+                            <span class="glyphicon glyphicon-bell"></span>
+                            <img id="avatar" height="40px" width="40px" alt="User avatar picture" src="https://images.pexels.com/photos/920220/pexels-photo-920220.jpeg?auto=compress&cs=tinysrgb&w=800">
+                            <span>Hennie van Heerden</span>
+                        </span>
+                    </div>
+                </div>
+                <div id="topBarBottom">
 
+                </div>
             </div>
         </div>
     </body>
