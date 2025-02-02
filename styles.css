@@ -16,7 +16,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 100vw;
     height: 100vh;
-    background-color: lightgray;
+    background-color: rgb(229, 234, 235);
     
 }
 
@@ -77,6 +77,8 @@
 }
 
 #topBar{
+    padding-top: 1vh;
+    top: 10px;
     background-color: white;
     grid-area: 1 / 2 / 2 / 6;
 }
@@ -87,16 +89,39 @@
 }
 
 #topBarTopLeft{
-    border: 1px solid black;
- width: 60%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 60%;
+    & input{
+        position: relative;
+        top: 20%;
+        background-color: rgb(229, 234, 235);
+        border: none;
+        width: 80%;
+        height: 60%;
+        border-radius: 30px;
+    }
+
+    & span{
+        top: 30%;
+        padding-right: 1%;
+    }
 }
 
 #topBarTopRight{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    font-weight: bold;
     width: 40%;
-    border: 1px solid black;
-    align-items: flex-end;
+
     & #avatar{
-        
         border-radius: 50%;
+    }
+
+    & span{
+        padding-top: 7px;
+        font-size: large;
     }
 }
