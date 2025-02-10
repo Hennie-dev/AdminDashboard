@@ -123,6 +123,9 @@
     & #welcomeUserHolder p{
         margin: 0px 10px 0px;
     }
+    & #welcomeMessage{
+        font-size: 0.7em;
+    }
 }
 
 #topBarBottomRight{
@@ -166,5 +169,21 @@
      border-left: 6px solid orange;
      width: 400px;
      height: 200px;
-     padding: 15px;
+     padding: 0px 15px 15px 15px;
+     box-shadow: 2px 2px 3px 1px grey;
+
+     &:hover{
+        box-shadow: 2px 2px 3px 1px rgb(160, 160, 160);
+     }
+
+     & h4{
+        font-weight: bold;
+     }
+
+     & p{
+        height: 55%;
+        color: grey;
+        overflow: hidden;
+
+     }
 }
