@@ -187,3 +187,75 @@
 
      }
 }
+
+.classButtons{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+     & img:hover{
+        cursor:pointer;
+        border-radius: 50%;
+        animation: highlight 0.3s 1 forwards linear;
+     }
+}
+
+@keyframes highlight{
+    to{
+        background-color: lightgrey;
+        padding: 1px;
+    }
+
+}
+
+#sideBarRight{
+    grid-area: 2 / 5 / 5 / 6;
+    margin-top: 20px;
+}
+
+#announcementCard{
+    background-color: white;
+     border-radius: 5px;
+     width: 400px;
+     height: 300px;
+     padding: 0px 15px 15px 15px;
+     box-shadow: 2px 2px 3px 1px grey;
+
+     &:hover{
+        box-shadow: 2px 2px 3px 1px rgb(160, 160, 160);
+     }
+
+     & h4{
+        font-weight: bold;
+     }
+
+     & p{
+        height: 55%;
+        color: grey;
+        overflow: hidden;
+
+     }
+}
+
+#trendingCard{
+    background-color: white;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    padding: 0px 15px 15px 15px;
+    box-shadow: 2px 2px 3px 1px grey;
+
+    &:hover{
+       box-shadow: 2px 2px 3px 1px rgb(160, 160, 160);
+    }
+
+    & h4{
+       font-weight: bold;
+    }
+
+    & p{
+       height: 55%;
+       color: grey;
+       overflow: hidden;
+
+    }
+}
