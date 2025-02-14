@@ -26,6 +26,7 @@
     background-color: #1992D4;
     font-weight: bold;
     color: white;
+    overflow-y: hidden;
 
     & a{
         color: white;
@@ -41,6 +42,8 @@
     grid-template-rows: 1fr 6fr 3fr 7fr;
     gap: 15%;
     font-size: large;
+    height: 99%;
+    overflow: hidden;
 
     & a:hover{
         background-color: #1e87c0;
@@ -50,6 +53,8 @@
 
     & a span{
         padding-right: 10px;
+        height: 10px;
+        width: 18px;
     }
 
 }
@@ -151,7 +156,7 @@
 #mainContent{
     grid-column: 2 / 5;
     grid-row: 2 / 5;
-    margin: 20px;
+    margin: 15px;
     overflow-y: auto;
 }
 
@@ -210,6 +215,7 @@
 #sideBarRight{
     grid-area: 2 / 5 / 5 / 6;
     margin-top: 20px;
+    margin-right: 20px;
 }
 
 #announcementCard{
@@ -250,22 +256,19 @@
     background-color: white;
     border-radius: 5px;
     width: 400px;
-    height: 300px;
-    padding: 0px 15px 15px 15px;
+    height: 263px;
+    padding: 15px 15px 15px 15px;
     box-shadow: 2px 2px 3px 1px grey;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
 
     &:hover{
        box-shadow: 2px 2px 3px 1px rgb(160, 160, 160);
     }
 
-    & h4{
-       font-weight: bold;
-    }
-
-    & p{
-       height: 55%;
-       color: grey;
-       overflow: hidden;
-
+    & img{
+        border-radius: 50%;
     }
 }
