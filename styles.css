@@ -195,7 +195,7 @@
      & img:hover{
         cursor:pointer;
         border-radius: 50%;
-        animation: highlight 0.3s 1 forwards linear;
+        animation: highlight 0.2s 1 forwards linear;
      }
 }
 
@@ -213,25 +213,31 @@
 }
 
 #announcementCard{
-    background-color: white;
+     background-color: white;
      border-radius: 5px;
      width: 400px;
      height: 300px;
-     padding: 0px 15px 15px 15px;
+     padding: 0px 25px 25px 25px;
      box-shadow: 2px 2px 3px 1px grey;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
 
      &:hover{
         box-shadow: 2px 2px 3px 1px rgb(160, 160, 160);
      }
 
-     & h4{
-        font-weight: bold;
+
+     & h5{
+        font-weight: bolder;
+        
      }
 
      & p{
-        height: 55%;
+        margin: 0px;
+        padding: 0px;
         color: grey;
-        overflow: hidden;
+        font-weight: bold;
 
      }
 }
