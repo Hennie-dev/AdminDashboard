@@ -261,7 +261,6 @@
     box-shadow: 2px 2px 3px 1px grey;
     display: flex;
     flex-direction: column;
-    gap: 25px;
     justify-content: center;
 
     &:hover{
