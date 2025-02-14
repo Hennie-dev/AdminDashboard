@@ -221,12 +221,16 @@
      box-shadow: 2px 2px 3px 1px grey;
      display: flex;
      flex-direction: column;
-     align-content: center;
+     justify-content: center;
 
      &:hover{
         box-shadow: 2px 2px 3px 1px rgb(160, 160, 160);
      }
 
+     & hr{
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
 
      & h5{
         font-weight: bolder;
